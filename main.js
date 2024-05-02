@@ -1,15 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const reservationForm = document.getElementById('reservationForm');
-    const reservationSection = document.getElementById('reservationSection');
-
-    reservationForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
-        
-        // Show the reservation section
-        reservationSection.classList.remove('d-none');
-    });
-});
-
 
 // Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
@@ -37,5 +25,26 @@ document.addEventListener("DOMContentLoaded", function () {
         // Show the reservation section
         const reservationSection = document.getElementById("reservationSection");
         reservationSection.classList.remove("d-none");
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Hide reservation sections initially
+    const reservationSections = document.querySelectorAll('.reservation-section');
+    reservationSections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    const form = document.getElementById('reservationForm');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Show reservation sections
+        reservationSections.forEach(section => {
+            section.style.display = 'block';
+        });
+
+        // Perform form submission here
+        // For example, you can use AJAX to submit the form data to the server
     });
 });
