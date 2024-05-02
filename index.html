@@ -32,12 +32,37 @@
 
     <!-- Template Stylesheet -->
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 </head>
 
 <body>
+
+    <!-- <div class="wrapper">
+        <header>
+          <div class="headline">
+          </div>
+        <ul id="slides">
+          <li class="slide slide1 showing"></li>
+          <li class="slide slide2"></li>
+          <li class="slide slide3"></li>
+          <button onClick="prevSlide();"><i class="arrow arrow-next fa fa-angle-left fa-5x"></i></button>
+          <button onClick="nextSlide();"><i class="arrow arrow-prev fa fa-angle-right fa-5x"></i></button>
+        </ul>
+          
+        
+        
+          </header>
+        </div> -->
+        
+        
+        
+
     <div class="container-xxl bg-white p-0">
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
+    <!-- Navbar & Hero Start -->
+    <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark px-4 px-lg-5 py-3 py-lg-0"
                 style="background-color: #5c2b74;">
                 <a href="" class="navbar-brand p-0">
@@ -64,88 +89,187 @@
                 </div>
             </div>
         </div>
-        <!-- Navbar & Hero End -->
+    <!-- Navbar & Hero End -->
 
-        <!-- Reservation Start -->
-        <div class="container-xxl px-4 py-3 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="row g-0">
-                <div class="col-md-6">
-                    <div class="">
-                        <img class="smallimg2" src="Artboard 10.png" alt="">
+    <!-- Reservation Start -->
+    <div class="container-xxl px-4 py-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <div class="">
+                    <img class="smallimg2" src="Artboard 10.png" alt="">
 
-                    </div>
                 </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <div class=" wow fadeInUp" data-wow-delay="0.2s">
-                        <form id="reservationForm">
-                            <div class="row g-3">
-                                <div class="col-md-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="firmName" placeholder="Firm Name"
-                                            required>
-                                        <label for="firmName">Firm Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="yourName" placeholder="Your Name"
-                                            required>
-                                        <label for="yourName">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email"
-                                            required>
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="mobileNumber"
-                                            placeholder="Mobile Number" required>
-                                        <label for="mobileNumber">Mobile Number</label>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <button class="btn btn-primary w-100" style="border-radius: 30px;"
-                                        type="submit">Submit</button>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class=" wow fadeInUp" data-wow-delay="0.2s">
+                    <form id="reservationForm">
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input style="border-color: transparent;" type="text" class="form-control" id="firmName" placeholder="Firm Name"
+                                        required>
+                                    <label for="firmName">Firm Name</label>
                                 </div>
                             </div>
-                        </form>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input style="border-color: transparent;" type="text" class="form-control" id="yourName" placeholder="Your Name"
+                                        required>
+                                    <label for="yourName">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input style="border-color: transparent;"type="email" class="form-control" id="email" placeholder="Your Email"
+                                        required>
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input style="border-color: transparent;" type="text" class="form-control" id="mobileNumber"
+                                        placeholder="Mobile Number" required>
+                                    <label for="mobileNumber">Mobile Number</label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-primary w-100" style="border-radius: 30px;"
+                                    type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reservation -->
+    <div class="container-xxl px-4 py-3 wow fadeInUp reservation-section" data-wow-delay="0.1s">
+        <div class=" col-md-12 row g-0">
+            <div class="col-md-6">
+                <div class="">
+                    <img class="smallimg" src="Untitled-1-03.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 display: flex; flex-direction: column;">
+                <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <div class="text-center d-flex flex-row align-items-center justify-content-between">
+                                <h4>VIBE SMART HOMES</h4>
+                                <a href="Vibe Smart Homes Brochure.pdf" download>
+                                    <img src="download.png" alt="Download Icon" style="width: 25px;">
+                                </a>
+                                <hr>
+                            </div>
+                            <div class="text-center d-flex flex-row align-items-center justify-content-between">
+                                <h4>VIDEOS</h4>
+                                <a href="/" download>
+                                    <img src="download.png" alt="Download Icon"
+                                        style="width: 25px; margin-left: 153px;">
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Reservation -->
-        <div class="container-xxl px-4 py-3 wow fadeInUp reservation-section" data-wow-delay="0.1s">
-            <div class=" col-md-12 row g-0">
-                <div class="col-md-6">
-                    <div class="">
-                        <img class="smallimg" src="Untitled-1-03.png" alt="">
+
+    <!-- Reservation -->
+    <div class="container-xxl px-4 py-3 wow fadeInUp reservation-section" data-wow-delay="0.1s">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <div class="">
+                    <img class="smallimg" src="Untitled-1-04.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 display: flex; flex-direction: column;">
+                <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <div class="text-center d-flex flex-row align-items-center justify-content-between">
+                                <h4>WIRING DEVICES</h4>
+                                <a href="Wire & Cable Brochure.pdf" download>
+                                    <img src="download.png" alt="Download Icon" style="width: 25px; margin-left: 37px;">
+                                </a>
+                                <hr>
+                            </div>
+                            <div class="text-center d-flex flex-row align-items-center justify-content-between">
+                                <h4>LEO</h4>
+                                <a href="Leo Brochure.pdf" download>
+                                    <img src="download.png" alt="Download Icon"
+                                        style="width: 25px; margin-left: 189px;">
+                                </a>
+                                <hr>
+                            </div>
+                            <div class="text-center d-flex flex-row align-items-center justify-content-between">
+                                <h4>AURA</h4>
+                                <a href="Aura Brochure.pdf" download>
+                                    <img src="download.png" alt="Download Icon"
+                                        style="width: 25px; margin-left: 170px;">
+                                </a>
+                                <hr>
+                            </div>
+                            <div class="text-center d-flex flex-row align-items-center justify-content-between">
+                                <h4>ADORA</h4>
+                                <a href="Adora Brochure.pdf" download>
+                                    <img src="download.png" alt="Download Icon"
+                                        style="width: 25px; margin-left: 150px;">
+                                </a>
+                                <hr>
+                            </div>
+                            <div class="text-center d-flex flex-row align-items-center justify-content-between">
+                                <h4>ATLIS</h4>
+                                <a href="Altis Brochure.pdf" download>
+                                    <img src="download.png" alt="Download Icon"
+                                        style="width: 25px; margin-left: 170px;">
+                                </a>
+                                <hr>
+                            </div>
+                            <div class="text-center d-flex flex-row align-items-center justify-content-between">
+                                <h4>VIDEOS</h4>
+                                <a href="#" download>
+                                    <img src="download.png" alt="Download Icon"
+                                        style="width: 25px; margin-left: 145px;">
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 display: flex; flex-direction: column;">
-                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="row g-3">
-                            <div class="col-md-12">
-                                <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                    <h4>Vibe Smart Homes</h4>
-                                    <a href="path/to/your/brochure.pdf" download>
-                                        <img src="download.png" alt="Download Icon" style="width: 25px;">
-                                    </a>
-                                    <hr>
-                                </div>
-                                <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                    <h4>Videos</h4>
-                                    <a href="path/to/your/brochure.pdf" download>
-                                        <img src="download.png" alt="Download Icon"
-                                            style="width: 25px; margin-left: 140px;">
-                                    </a>
-                                    <hr>
-                                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reservation -->
+    <div class="container-xxl px-4 py-3 wow fadeInUp reservation-section" data-wow-delay="0.1s">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <div class="">
+                    <img class="smallimg" src="Untitled-1-05.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 display: flex; flex-direction: column;">
+                <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <div class="text-center d-flex flex-row align-items-center justify-content-between">
+                                <h4>WIRES AND CABLES</h4>
+                                <a href="path/to/your/brochure.pdf" download>
+                                    <img src="download.png" alt="Download Icon" style="width: 25px;">
+                                </a>
+                                <hr>
+                            </div>
+                            <div class="text-center d-flex flex-row align-items-center justify-content-between">
+                                <h4>VIDEOS</h4>
+                                <a href="/" download>
+                                    <img src="download.png" alt="Download Icon" style="width: 25px;margin-left: 150px;">
+                                </a>
+                                <hr>
                             </div>
                         </div>
                     </div>
@@ -153,108 +277,7 @@
             </div>
         </div>
 
-
-        <!-- Reservation -->
-        <div class="container-xxl px-4 py-3 wow fadeInUp reservation-section" data-wow-delay="0.1s">
-            <div class="row g-0">
-                <div class="col-md-6">
-                    <div class="">
-                        <img class="smallimg" src="Untitled-1-04.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6 display: flex; flex-direction: column;">
-                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="row g-3">
-                            <div class="col-md-12">
-                                <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                    <h4>Wiring Devices</h4>
-                                    <a href="path/to/your/brochure.pdf" download>
-                                        <img src="download.png" alt="Download Icon"
-                                            style="width: 25px; margin-left: 40px;">
-                                    </a>
-                                    <hr>
-                                </div>
-                                <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                    <h4>Leo</h4>
-                                    <a href="path/to/your/brochure.pdf" download>
-                                        <img src="download.png" alt="Download Icon"
-                                            style="width: 25px; margin-left: 166px;">
-                                    </a>
-                                    <hr>
-                                </div>
-                                <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                    <h4>Aura</h4>
-                                    <a href="path/to/your/brochure.pdf" download>
-                                        <img src="download.png" alt="Download Icon"
-                                            style="width: 25px; margin-left: 153px;">
-                                    </a>
-                                    <hr>
-                                </div>
-                                <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                    <h4>Adora</h4>
-                                    <a href="path/to/your/brochure.pdf" download>
-                                        <img src="download.png" alt="Download Icon"
-                                            style="width: 25px; margin-left: 138px;">
-                                    </a>
-                                    <hr>
-                                </div>
-                                <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                    <h4>Atlis</h4>
-                                    <a href="path/to/your/brochure.pdf" download>
-                                        <img src="download.png" alt="Download Icon"
-                                            style="width: 25px; margin-left: 153px;">
-                                    </a>
-                                    <hr>
-                                </div>
-                                <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                    <h4>Videos</h4>
-                                    <a href="path/to/your/brochure.pdf" download>
-                                        <img src="download.png" alt="Download Icon"
-                                            style="width: 25px; margin-left: 129px;">
-                                    </a>
-                                    <hr>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Reservation -->
-        <div class="container-xxl px-4 py-3 wow fadeInUp reservation-section" data-wow-delay="0.1s">
-            <div class="row g-0">
-                <div class="col-md-6">
-                    <div class="">
-                        <img class="smallimg" src="Untitled-1-05.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6 display: flex; flex-direction: column;">
-                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="row g-3">
-                            <div class="col-md-12">
-                                <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                    <h4>Wires And Cables</h4>
-                                    <a href="path/to/your/brochure.pdf" download>
-                                        <img src="download.png" alt="Download Icon" style="width: 25px;">
-                                    </a>
-                                    <hr>
-                                </div>
-                                <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                    <h4>Videos</h4>
-                                    <a href="path/to/your/brochure.pdf" download>
-                                        <img src="download.png" alt="Download Icon"
-                                            style="width: 25px;margin-left: 125px;">
-                                    </a>
-                                    <hr>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    </div>
     </div>
 
 
@@ -272,18 +295,18 @@
                     <div class="row g-3">
                         <div class="col-md-12">
                             <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                <h4>Lighting</h4>
-                                <a href="path/to/your/brochure.pdf" download>
+                                <h4>LIGHTING</h4>
+                                <a href="Lighting Brochure.pdf" download>
                                     <img src="download.png" alt="Download Icon"
-                                        style="width: 25px; margin-left: 100px;">
+                                        style="width: 25px; margin-left: 100px; margin-left: 100px;">
                                 </a>
                                 <hr>
                             </div>
                             <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                <h4>Videos</h4>
-                                <a href="path/to/your/brochure.pdf" download>
+                                <h4>VIDEOS</h4>
+                                <a href="/" download>
                                     <img src="download.png" alt="Download Icon"
-                                        style="width: 25px; margin-left: 115px;">
+                                        style="width: 25px; margin-left: 115px; margin-left: 135px;">
                                 </a>
                                 <hr>
                             </div>
@@ -307,16 +330,16 @@
                     <div class="row g-3">
                         <div class="col-md-12">
                             <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                <h4>Switchgear</h4>
-                                <a href="path/to/your/brochure.pdf" download>
-                                    <img src="download.png" alt="Download Icon" style="width: 25px;margin-left: 70px;">
+                                <h4>SWITCHGEAR</h4>
+                                <a href="Switchgear Brochure.pdf" download>
+                                    <img src="download.png" alt="Download Icon" style="width: 25px;margin-left: 65px;">
                                 </a>
                                 <hr>
                             </div>
                             <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                <h4>Videos</h4>
-                                <a href="path/to/your/brochure.pdf" download>
-                                    <img src="download.png" alt="Download Icon" style="width: 25px;margin-left: 120px;">
+                                <h4>VIDEOS</h4>
+                                <a href="/" download>
+                                    <img src="download.png" alt="Download Icon" style="width: 25px;margin-left: 140px;">
                                 </a>
                                 <hr>
                             </div>
@@ -340,16 +363,16 @@
                     <div class="row g-3">
                         <div class="col-md-12">
                             <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                <h4>Fans</h4>
-                                <a href="path/to/your/brochure.pdf" download>
-                                    <img src="download.png" alt="Download Icon" style="width: 25px;margin-left: 140px;">
+                                <h4>FANS</h4>
+                                <a href="Fan Brochure.pdf" download>
+                                    <img src="download.png" alt="Download Icon" style="width: 25px;margin-left: 155px;">
                                 </a>
                                 <hr>
                             </div>
                             <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                <h4>Videos</h4>
-                                <a href="path/to/your/brochure.pdf" download>
-                                    <img src="download.png" alt="Download Icon" style="width: 25px;margin-left: 115px;">
+                                <h4>VIDEOS</h4>
+                                <a href="/" download>
+                                    <img src="download.png" alt="Download Icon" style="width: 25px;margin-left: 135px;">
                                 </a>
                                 <hr>
                             </div>
@@ -373,16 +396,16 @@
                     <div class="row g-3">
                         <div class="col-md-12">
                             <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                <h4>Accessories</h4>
-                                <a href="path/to/your/brochure.pdf" download>
+                                <h4>ACCESSORIES</h4>
+                                <a href="Non Modular_&_Accessories Brochure.pdf" download>
                                     <img src="download.png" alt="Download Icon" style="width: 25px;margin-left: 70px;">
                                 </a>
                                 <hr>
                             </div>
                             <div class="text-center d-flex flex-row align-items-center justify-content-between">
-                                <h4>Videos</h4>
-                                <a href="path/to/your/brochure.pdf" download>
-                                    <img src="download.png" alt="Download Icon" style="width: 25px;margin-left: 125px;">
+                                <h4>VIDEOS</h4>
+                                <a href="/" download>
+                                    <img src="download.png" alt="Download Icon" style="width: 25px;margin-left: 155px;">
                                 </a>
                                 <hr>
                             </div>
@@ -427,12 +450,6 @@
         </div>
     </div>
     <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
-
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -447,6 +464,7 @@
 
     <!-- Template Javascript -->
     <script src="main.js"></script>
+    <script src="header.js"></script>
 </body>
 
 </html>
