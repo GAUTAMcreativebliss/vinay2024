@@ -45,7 +45,7 @@
 
 body {
     margin: 0;
-    font-family: "Heebo", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -81,10 +81,10 @@ h6,
 .h6 {
     margin-top: 0;
     margin-bottom: .5rem;
-    font-family: "Nunito", sans-serif;
-    font-weight: 800;
-    line-height: 1.2;
-    color: #0F172B
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 800; */
+    /* line-height: 1.2; */
+    color: #5c2b74;
 }
 
 h1,
@@ -250,7 +250,7 @@ pre,
 code,
 kbd,
 samp {
-    font-family: var(--bs-font-monospace);
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     direction: ltr
         /* rtl:ignore */
@@ -351,7 +351,7 @@ select,
 optgroup,
 textarea {
     margin: 0;
-    font-family: inherit;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: inherit;
     line-height: inherit
 }
@@ -670,6 +670,9 @@ progress {
         font-size: 51px; 
         padding-top: 30px;
     }
+    .smallimg{
+        max-width: 380px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -679,6 +682,10 @@ progress {
     .container-md,
     .container-lg {
         max-width: 960px
+    }
+
+    .smallimg{
+        max-width: 380px;
     }
 }
 
@@ -1293,6 +1300,10 @@ progress {
 
     .offset-md-10 {
         margin-left: 83.33333%
+    }
+
+    .smallimg{
+        max-width: 380px;
     }
 
     .offset-md-11 {
@@ -2177,12 +2188,20 @@ progress {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch
     }
+
+    .smallimg{
+        max-width: 380px;
+    }
 }
 
 @media (max-width: 767.98px) {
     .table-responsive-md {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch
+    }
+
+    .smallimg{
+        max-width: 380px;
     }
 }
 
@@ -3914,7 +3933,9 @@ fieldset:disabled .btn {
         left: 0
             /* rtl:ignore */
     }
-
+    .smallimg{
+        max-width: 380px;
+    }
     .dropdown-menu-sm-end {
         --bs-position: end
     }
@@ -3939,6 +3960,10 @@ fieldset:disabled .btn {
         ;
         left: 0
             /* rtl:ignore */
+    }
+
+    .smallimg{
+        max-width: 380px;
     }
 
     .dropdown-menu-md-end {
@@ -6260,7 +6285,7 @@ fieldset:disabled .btn {
     z-index: 1080;
     display: block;
     margin: 0;
-    font-family: "Heebo", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -6387,7 +6412,7 @@ fieldset:disabled .btn {
     z-index: 1070;
     display: block;
     max-width: 276px;
-    font-family: "Heebo", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -8182,7 +8207,7 @@ fieldset:disabled .btn {
 }
 
 .font-monospace {
-    font-family: var(--bs-font-monospace) !important
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .fs-1 {
